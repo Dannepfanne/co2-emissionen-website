@@ -1,44 +1,36 @@
 // Header.js
 import React from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faTable } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand" to="/">
-        CO2 Emissions Tracker
-      </Link>
+    <Navbar bg="success-subtle" className="shadow-lg">
+      <Container>
+        <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
+          <img
+            src="/CO2_LOG_logo.svg"
+            width="30"
+            height="30"
+            className="d-inline-block align-left"
+            alt="CO2-LOG-Logo"
+          />
+          <span className="ms-2 d-none d-md-block">
+            CO&#8322;-Log - Nachvollziehbar, Nachhaltig und Natürlich
+          </span>
+          <span className="ms-2 d-md-none">CO&#8322;-Log</span>
+        </Navbar.Brand>
 
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
-            <Link to="/" className="nav-link">
-              <FontAwesomeIcon icon={faHome} /> Home
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/co2" className="nav-link">
-              <FontAwesomeIcon icon={faTable} /> CO2 Table
-            </Link>
-          </li>
-          {/* Füge hier weitere Links hinzu, wenn nötig */}
-        </ul>
-      </div>
-    </nav>
+        <Nav className="ms-auto d-none d-md-flex">
+          <Nav.Link as={Link} to="/">
+            Home
+          </Nav.Link>
+          <Nav.Link as={Link} to="/about">
+            Über uns
+          </Nav.Link>
+        </Nav>
+      </Container>
+    </Navbar>
   );
 };
 

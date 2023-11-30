@@ -1,17 +1,19 @@
 // Home.js
-import React from "react";
-import CO2Table from "./CO2Table";
 
-const Home = ({ co2DataProp }) => {
+import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+const Home = () => {
   return (
-    <div>
-      <h2>Willkommen auf der CO2 Emissions Tracker Homepage</h2>
+    <Container>
+      <h2>Hier ist die Homepage</h2>
       <p>
-        Hier findest du Informationen zu CO2-Emissionen von verschiedenen
-        Unternehmen und Ländern.
+        Hier steht ein Text, warum CO2 wichtig ist. Die Homepage bietet
+        Übersichten zu <Link to="/co2">Gesamtdaten</Link>, einer{" "}
+        <Link to="/co2-country-rank">Länderübersicht</Link> und einer Bilanz von{" "}
+        <Link to="/co2-company-rank">Unternehmen</Link>.
       </p>
-      <CO2Table co2DataProp={co2DataProp} />
-    </div>
+    </Container>
   );
 };
 
