@@ -1,6 +1,5 @@
 //approutes.js
 import Home from "../components/Home";
-import CO2Table from "./CO2Table";
 
 import CO2Landing from "./CO2Landing";
 import Ranking from "./Ranking";
@@ -13,7 +12,6 @@ import GDPR from "./GDPR";
 
 const appRoutes = [
   { path: "/", element: <Home /> },
-  { path: "/co2", element: <CO2Table /> },
   { path: "/co2-faq", element: <CO2Faq /> },
   { path: "/co2-landing", element: <CO2Landing /> },
   { path: "/ueberuns", element: <About /> },

@@ -28,10 +28,7 @@ const SideNav = () => {
                 <hr />
               </div>
               <Nav.Link as={Link} to="/co2-landing">
-                Warum CO2 messen?
-              </Nav.Link>
-              <Nav.Link as={Link} to="/co2">
-                Gesamter Datensatz
+                Weltweite CO2-Daten
               </Nav.Link>
               <Nav.Link as={Link} to="/ranking">
                 Rangliste

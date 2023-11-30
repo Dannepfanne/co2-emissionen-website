@@ -6,17 +6,18 @@ import CO2Table from "./CO2Table";
 const CO2Landing = (co2Data) => {
   return (
     <Container>
-      <h2 id="intro">Hier steht das Intro für CO&#8322;Landing</h2>
-      <p>
+      <h2 id="intro">CO&#8322;-Austoß von Ländern und Unternehmen</h2>
+      <p className="fw-bold text-center my-5">
         Die Dokumentation des CO&#8322;-Ausstoßes von Unternehmen und Ländern
-        ist von entscheidender Bedeutung, um das Bewusstsein für die
-        Umweltauswirkungen von industriellen und nationalen Aktivitäten zu
-        schärfen. Ein transparenter Überblick über CO&#8322;-Emissionen trägt
-        dazu bei, Verantwortung zu fördern und umweltfreundliche Entscheidungen
-        auf individueller und organisatorischer Ebene zu unterstützen. Die
-        Dokumentation ermöglicht es, den Fortschritt bei der Reduzierung von
-        CO&#8322;-Emissionen zu verfolgen und positive Veränderungen in Richtung
-        Nachhaltigkeit zu fördern.
+        ist von entscheidender Bedeutung!
+      </p>
+      <p>
+        Das Bewusstsein für die Umweltauswirkungen von industriellen und
+        nationalen Aktivitäten kann nur so geschärft werden. Ein transparenter
+        Überblick über CO&#8322;-Emissionen trägt dazu bei, Verantwortung zu
+        fördern und umweltfreundliche Entscheidungen auf individueller und
+        organisatorischer Ebene zu unterstützen.
+        <br />
         <br />
         CO&#8322;-LOG ermöglicht die übersichtliche Darstellung von
         CO&#8322;-Emissionsdaten in einer benutzerfreundlichen Tabelle. Durch

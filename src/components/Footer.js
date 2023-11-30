@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <Container className="mt-5 ">
+      {/* Anpassung der Darstellung für Bildschirme <md */}
       <Container className="d-md-flex text-md-left text-center justify-content-center">
         <Col>
           <h5>NÜTZLICHES</h5>
