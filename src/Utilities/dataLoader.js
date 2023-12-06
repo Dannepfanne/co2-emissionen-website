@@ -9,7 +9,7 @@ const dataLoader = (WrappedComponent) => {
       try {
         const response = await fetch("/data/MOCK_c02.json");
         const data = await response.json();
-        console.log("Fetched CO2 data:", data); // Hinzugefügter Log
+        console.log("Fetched CO2 data:", data);
         setCo2Data(data);
       } catch (error) {
         console.error("Fehler beim Laden der CO2-Daten:", error);
@@ -21,7 +21,7 @@ const dataLoader = (WrappedComponent) => {
     }, []);
 
     useEffect(() => {
-      console.log("CO2 data in dataLoader:", co2Data); // Hinzugefügter Log
+      console.log("CO2 data in dataLoader:", co2Data);
     }, [co2Data]);
 
     return <WrappedComponent {...props} co2Data={co2Data} />;
